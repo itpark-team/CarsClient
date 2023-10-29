@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cars Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+<h1>Cars Store</h1>
+<div>
+    <button onclick="loadCars()" class="btn btn-primary">Load Cars List</button>
+</div>
+<div id="div-cars-list">
+
+</div>
+
+<div class="row">
+    <div class="col-lg-3">
+        <input type="text" id="input-name" class="form-control" placeholder="Введите название машины"/>
+    </div>
+    <div class="col-lg-3">
+        <input type="text" id="input-release-year" class="form-control" placeholder="Введите год релиза"/>
+    </div>
+    <div class="col-lg-3">
+        <input type="text" id="input-price" class="form-control" placeholder="Введите цену машины"/>
+    </div>
+    <div class="col-lg-3">
+        <button type="submit" class="btn btn-primary" onclick="addNewCar()">Добавить</button>
+    </div>
+</div>
+
+</body>
+</html>
